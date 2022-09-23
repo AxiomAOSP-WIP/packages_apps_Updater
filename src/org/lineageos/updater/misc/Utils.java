@@ -151,12 +151,12 @@ public class Utils {
         return updates;
     }
 
-    public static String getArrowDownloadUrl(Context context) {
+    public static String getAxiomDownloadUrl(Context context) {
         String device = SystemProperties.get(Constants.PROP_NEXT_DEVICE,
                 SystemProperties.get(Constants.PROP_DEVICE));
-        String arrowDownloadUrl = context.getString(R.string.arrow_download_url);
+        String axiomDownloadUrl = context.getString(R.string.axiom_download_url);
 
-        return arrowDownloadUrl.replace("{device}", device);
+        return axiomDownloadUrl.replace("{device}", device);
     }
 
     public static String getServerURL(Context context) {
