@@ -165,7 +165,7 @@ public class Utils {
                 SystemProperties.get(Constants.PROP_DEVICE));
         String type = SystemProperties.get(Constants.PROP_RELEASE_TYPE).toLowerCase(Locale.ROOT);
         String version = Constants.PROJECT_NAME_PREFIX
-                + SystemProperties.get(Constants.PROP_BUILD_VERSION).split("v")[1].toLowerCase(Locale.ROOT);
+                + SystemProperties.get(Constants.PROP_BUILD_VERSION).toLowerCase(Locale.ROOT);
         String ziptype = SystemProperties.get(Constants.PROP_ZIP_TYPE).toLowerCase(Locale.ROOT);
 
         // Fallback to vanilla if prop was not found
